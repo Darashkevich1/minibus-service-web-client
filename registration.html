@@ -51,8 +51,14 @@
   						</div>
 					</div>
 				</div>
-				<div class="card-footer bg-success">
-					<a class="text-white" href="#">Зарегистрироваться</a>
+				<div class="card-footer" id="user_types" style="display: none;">
+					<p>Выберите роль:</p>
+						<button type="button" id="Passenger" class="btn btn-light button_user_type">Пассажир</button>
+						<button type="button" id="Driver" class="btn btn-light button_user_type">Водитель</button>
+						<button type="button" id="Leader" class="btn btn-light button_user_type">Предприниматель</button>
+				</div>
+				<div id="button_registration_background" class="card-footer bg-success" style="display: none;">
+					<a class="text-white" id="button_registration" href="#">Зарегистрироваться</a>
 				</div>
 			</div>
         </div>
@@ -63,6 +69,7 @@
 <script src="include/popper.min.js"></script>
 <script src="include/bootstrap.min.js"></script>
 <script src="include/jquery.cookie.js"></script>
-<script src="scripts/registration.popovers.js"></script>
+<script src="scripts/registration.prepare.js"></script>
+<script src="scripts/registration.signup.js"></script>
 </body>
 </html>
