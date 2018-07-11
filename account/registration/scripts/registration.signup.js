@@ -31,6 +31,7 @@ var signin = function(email, password, role) {
 var signin_success = function(data) {
 	if(data) {
 		$.cookie("accessToken", data.accessToken)
-		window.location.href = "account/edit.html"
+		$.cookie("userId", data.userId)
+		window.location.href = "../edit/index.html"
 	}
 } 
