@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../include/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+	<title>Маршрутка: Редактирование профиля</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href="index.html">Маршрутка</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_menu">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar_menu">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#about_service">О сервисе</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!-- Edit profile window -->
+
+<div class="container-fluid">
+	<div class="row mt-2">
+		<div class="col-lg-7 mx-auto">
+			<div class="alert mt-2 alert-success" id="alert_update" role="alert" style="display: none"></div>
+			<div class="card text-center shadow-lg">
+				<div class="card-header">
+					<img src="../images/edit.png" width="128">
+				</div>
+				<div class="card-header">
+					Редактирование профиля
+				</div>
+				<div class="card-body">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Имя</span>
+						</div>
+						<input type="text" class="form-control" maxlength="50" id="input_firstname">
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Фамилия</span>
+						</div>
+						<input type="text" class="form-control" maxlength="50" id="input_lastname">
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Телефон</span>
+						</div>
+						<input type="tel" class="form-control" maxlength="20" id="input_phone">
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Адрес</span>
+						</div>
+						<input type="text" class="form-control" maxlength="20" id="input_address">
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="btn-group">
+						<button class="btn btn-success" id="button_save">Сохранить</button>
+						<button class="btn btn-danger" id="button_delete">Удалить аккаунт</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="../include/jquery-3.3.1.min.js"></script>
+<script src="../include/popper.min.js"></script>
+<script src="../include/bootstrap.min.js"></script>
+<script src="../include/jquery.cookie.js"></script>
+<script src="scripts/account.edit.alerts.js"></script>
+<script src="scripts/account.edit.queries.js"></script>
+<script src="scripts/account.edit.js"></script>
+</body>
+</html>
