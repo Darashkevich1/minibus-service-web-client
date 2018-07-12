@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="../include/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
 	<title>Маршрутка: Профиль</title>
 </head>
 <body>
@@ -28,7 +27,65 @@
 <div class="container-fluid">
 	<div class="row mt-2">
 		<div class="col-lg-7 mx-auto">
-			
+			<div class="card text-center shadow-lg mb-2" id="panel_load">
+				<div class="card-header">Профиль</div>
+				<div class="card-body" id="panel_load_label">Загрузка данных..</div>
+			</div>
+			<div class="card text-center shadow-lg mb-2" id="panel_user_info" style="display: none;">
+				<div class="card-header">Профиль</div>
+				<div class="card-body p-0">
+					<div class="card-group">
+
+						<div class="card text-center mb-0 border-0">
+							<div class="card-body">
+								<img src="images/user.png" width="128">
+							</div>
+							<div class="card-footer">
+								<a href="#" id="button_load_ava">Загрузить фото</a>
+							</div>
+						</div>
+
+						<div class="card text-center mb-0 border-0">
+							<div class="card-body">
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Имя</span>
+									</div>
+									<input class="form-control bg-light" id="input_firstname" disabled>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Фамилия</span>
+									</div>
+									<input class="form-control bg-light" id="input_lastname" disabled>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Телефон</span>
+									</div>
+									<input class="form-control bg-light" id="input_phone" disabled>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Адрес</span>
+									</div>
+									<input class="form-control bg-light" id="input_address" disabled>
+								</div>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Тип аккаунта</span>
+									</div>
+									<input class="form-control bg-light" id="input_account_type" disabled>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a href="edit/index.html">Редактировать</a>
+								<a href="#" id="button_logout" class="text-danger ml-5">Выйти</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -38,8 +95,7 @@
 <script src="../include/popper.min.js"></script>
 <script src="../include/bootstrap.min.js"></script>
 <script src="../include/jquery.cookie.js"></script>
-<script src="scripts/account.edit.alerts.js"></script>
-<script src="scripts/account.edit.queries.js"></script>
-<script src="scripts/account.edit.js"></script>
+<script src="scripts/account.queries.js"></script>
+<script src="scripts/account.js"></script>
 </body>
 </html>
