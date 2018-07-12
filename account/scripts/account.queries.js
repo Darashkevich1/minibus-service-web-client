@@ -14,3 +14,18 @@ var logout = function(token, success_func) {
 		success: success_func
 	})
 }
+
+var upload_ava = function(file, success_func) {
+	var dataForm = new FormData()
+	dataForm.append("file", file)
+	dataForm.append("accessToken", $.cookie("accessToken"))
+	$.ajax({
+		method: "POST",
+		processData: false,
+    	contentType: false,
+    	cache: false, 
+		url: "http://localhost:8080/file/upload",
+		data: dataForm,
+		success: success_func
+	})
+}

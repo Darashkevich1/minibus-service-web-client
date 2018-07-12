@@ -1,0 +1,8 @@
+.ava {
+    background-image: url("../images/ava");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
