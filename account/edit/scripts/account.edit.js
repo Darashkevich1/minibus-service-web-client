@@ -23,7 +23,9 @@ var fetch_current_user_success = function(data) {
 }
 
 $("#button_save").click(function() {
-	update_user_info(input_firstname.val(), input_lastname.val(), input_phone.val(), input_address.val(), $.cookie("accessToken"), update_user_info_success)
+	if(validate_fields()) {
+		update_user_info(input_firstname.val(), input_lastname.val(), input_phone.val(), input_address.val(), $.cookie("accessToken"), update_user_info_success)
+	}
 })
 
 var update_user_info_success = function(data) {
