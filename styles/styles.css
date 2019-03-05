@@ -15,10 +15,26 @@
 		border-radius: 4px;
 		background: rgba(0,0,0,0.6);
 	}
+
+	#weather_info {
+		margin-left: 40px;
+		margin-top: 40px;
+		width: 400px;
+		padding: 10px;
+		border-radius: 4px;
+		background: rgba(0,0,0,0.6);
+	}
 }
 
 @media (max-width: 991.98px) {
 	#text_info {
+		margin: 40px;
+		padding: 10px;
+		border-radius: 4px;
+		background: rgba(0,0,0,0.6);
+	}
+
+	#weather_info {
 		margin: 40px;
 		padding: 10px;
 		border-radius: 4px;
