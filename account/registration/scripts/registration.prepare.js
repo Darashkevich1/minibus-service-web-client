@@ -46,7 +46,7 @@ var check_email = function(email) {
 	$.ajax({
 		method: "POST",
 		async: false,
-		url: "https://minibus.azurewebsites.net/user/emailIsFree",
+		url: "https://busappmini.azurewebsites.net/user/emailIsFree",
 		data: {email:email},
 		success: function(data) {
 			isFree = data
