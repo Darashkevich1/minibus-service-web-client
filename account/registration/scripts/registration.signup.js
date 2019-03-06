@@ -22,7 +22,7 @@ var animate_button_registration = function() {
 var signin = function(email, password, role) {
 	$.ajax({
 		method: "POST",
-		url: "http://localhost:8080/user/register",
+		url: "https://busappmini.azurewebsites.net/user/register",
 		data: { email: email, password: password, role: role },
 		success: signin_success
 	})

@@ -20,7 +20,7 @@ var signin = function() {
 		setTimeout(function() {
 			$.ajax({
 				method: "POST",
-				url: "http://localhost:8080/user/login",
+				url: "https://busappmini.azurewebsites.net/user/login",
 				data: { email: input_login.val(), password: input_password.val() },
 				success: signin_result
 			})
