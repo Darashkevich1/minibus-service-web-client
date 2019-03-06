@@ -1,7 +1,7 @@
 var fetch_current_user = function(userId, success_func) {
 	$.ajax({
 		method: "GET",
-		url: "http://localhost:8080/user/"+userId,
+		url: "https://busappmini.azurewebsites.net/user/"+userId,
 		success: success_func
 	})
 }
@@ -9,7 +9,7 @@ var fetch_current_user = function(userId, success_func) {
 var logout = function(token, success_func) {
 	$.ajax({
 		method: "POST",
-		url: "http://localhost:8080/user/logout",
+		url: "https://busappmini.azurewebsites.net/user/logout",
 		data: {token: token},
 		success: success_func
 	})
@@ -24,7 +24,7 @@ var upload_ava = function(file, success_func) {
 		processData: false,
     	contentType: false,
     	cache: false, 
-		url: "http://localhost:8080/file/upload",
+		url: "https://busappmini.azurewebsites.net/file/upload",
 		data: dataForm,
 		success: success_func
 	})
