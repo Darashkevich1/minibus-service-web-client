@@ -2,9 +2,6 @@ var button_login = $("#button_login")
 var button_profile = $("#button_profile")
 var weather_info = $("#weather_info")
 
-alert(document.cookie)
-alert($.cookie("accessToken"))
-
 if($.cookie("userId") != "null" && $.cookie("userId") != undefined) {
 	button_profile.show()
 } else {
