@@ -30,7 +30,6 @@ var signin = function(email, password, role) {
 
 var signin_success = function(data) {
 	if(data) {
-		alert(data.accessToken);
 		$.cookie("accessToken", data.accessToken, { path: "/" })
 		$.cookie("userId", data.userId, { path: "/" })
 		window.location.href = "../edit/index.html"
