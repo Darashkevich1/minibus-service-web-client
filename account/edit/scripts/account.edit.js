@@ -48,8 +48,8 @@ var delete_user_success = function(data) {
 		inputs_panel.slideUp(300)
 		edit_buttons.slideUp(300)
 		label_load.slideDown(300)
-		$.cookie("accessToken", null)
-		$.cookie("userId", null)
+		$.cookie("accessToken", null, { path: "/" })
+		$.cookie("userId", null, { path: "/" })
 	} else {
 		label_load.html("Не удалось удалить пользователя :(")
 		inputs_panel.slideUp(300)

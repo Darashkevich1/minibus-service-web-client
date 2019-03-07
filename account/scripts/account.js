@@ -26,8 +26,8 @@ var fetch_current_user_success = function(data) {
 		panel_user_info.slideDown(300)
 	} else {
 		panel_load_label.html("Не удалось загрузить данные :(")
-		$.cookie("userId", null)
-		$.cookie("accessToken", null)
+		$.cookie("userId", null, { path: "/" })
+		$.cookie("accessToken", null, { path: "/" })
 	}
 }
 
@@ -38,8 +38,8 @@ $(document).ready(function() {
 
 var logout_success = function(data) {
 	if(data) {
-		$.cookie("userId", null)
-		$.cookie("accessToken", null)
+		$.cookie("userId", null, { path: "/" })
+		$.cookie("accessToken", null, { path: "/" })
 		window.location.href = "../index.html"
 	}
 }
