@@ -4,8 +4,9 @@ var progress_load = $("#progress_load")
 var signin_result = function(data) {
 	if(data) {
 		alert(data.accessToken)
-		document.cookie = "accessToken="+data.accessToken
-		document.cookie = "userId="+data.userId
+		document.cookie = "accessToken="+data.accessToken+";path=/"
+		//document.cookie = "userId="+data.userId+";path=/"
+		$.cookie("userId", data.userId, { path: "/" })
 		alert(document.cookie)
 		alert($.cookie("accessToken"))
 		window.location.href = "../../index.html"
