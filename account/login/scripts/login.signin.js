@@ -4,8 +4,9 @@ var progress_load = $("#progress_load")
 var signin_result = function(data) {
 	if(data) {
 		alert(data.accessToken)
-		document.cookie = "accessToken="+data.accessToken;
-		document.cookie = "userId="+data.userId;
+		document.cookie = "accessToken="+data.accessToken
+		document.cookie = "userId="+data.userId
+		alert(document.cookie)
 		window.location.href = "../../index.html"
 	} else {
 		p_error_login.slideDown(200)
