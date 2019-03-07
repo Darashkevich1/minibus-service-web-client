@@ -7,6 +7,7 @@ var signin_result = function(data) {
 		document.cookie = "accessToken="+data.accessToken
 		document.cookie = "userId="+data.userId
 		alert(document.cookie)
+		alert($.cookie("accessToken"))
 		window.location.href = "../../index.html"
 	} else {
 		p_error_login.slideDown(200)
